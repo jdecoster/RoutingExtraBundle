@@ -1,6 +1,6 @@
 # RoutingExtraBundle
 
-Provides a `debug:router:role` command which extends `debug:rouer` with extra information
+Provides a `debug:router:role` command which extends `debug:router` with extra information
 about required security ROLES set in the access_map.
 
 Installation
