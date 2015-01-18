@@ -13,8 +13,7 @@ use Symfony\Component\Routing\RouterInterface;
 /**
  * A console command for retrieving information about routes.
  *
- * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Jan De Coster <jan@we-create.be>
  */
 class RouterDebugRolesCommand extends ContainerAwareCommand
 {
