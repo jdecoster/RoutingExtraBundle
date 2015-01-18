@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="jdecoster.routing_extra.route.role" class="jdecoster\RoutingExtraBundle\Routing\Role">
+            <argument type="service" id="jdecoster.routing_extra.route.builder" />
+            <argument type="service" id="jdecoster.routing_extra.route.util.manipulator" />
+        </service>
+
+        <service id="jdecoster.routing_extra.route.util.manipulator" class="jdecoster\RoutingExtraBundle\Routing\Util\RoleManipulator">
+            <argument>%security.role_hierarchy.roles%</argument>
+            <argument type="service" id="controller_name_converter" />
+        </service>
+
+        <service id="jdecoster.routing_extra.route.builder" class="jdecoster\RoutingExtraBundle\Routing\Builder\RouteRoleBuilder">
+            <argument type="service" id="jdecoster.routing_extra.route.util.manipulator" />
+            <argument type="service" id="jdecoster.routing_extra.route.builder.access_map" />
+        </service>
+
+        <service id="jdecoster.routing_extra.route.builder.access_map" class="jdecoster\RoutingExtraBundle\Routing\Builder\Reader\AccessMapReader">
+            <argument type="service" id="security.access_map" />
+        </service>
+    </services>
+
+</container>

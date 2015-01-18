@@ -1,0 +1,26 @@
+{
+  "name": "jdecoster/router-extra-bundle",
+  "type": "symfony-bundle",
+  "description": "Display roles required by route ",
+  "keywords": ["symfony2", "route", "roles"],
+  "homepage": "https://github.com/jdecoster/RoutingExtraBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jdecoster",
+      "homepage": "http://www.we-create.be"
+    }
+  ],
+  "require": {
+    "symfony/symfony": ">=2.3",
+  },
+  "autoload": {
+    "psr-0": {"jdecoster\\RouterExtraBundle": ""}
+  },
+  "target-dir": "jdecoster/RouterExtraBundle",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.x-dev"
+    }
+  }
+}
