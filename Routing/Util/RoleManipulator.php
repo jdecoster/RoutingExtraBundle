@@ -39,14 +39,6 @@ class RoleManipulator
     {
         $controller = null;
         $action = null;
-        if( $route->hasDefault('_controller')) {
-            try {
-                $convertedController = $this->controllerNameParser->build( $route->getDefault( '_controller' ) );
-                //if(  )
-            } catch (\InvalidArgumentException $e) {
-
-            }
-        }
 
         return array(
             "path"          => $route->getPath(),
