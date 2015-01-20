@@ -3,7 +3,6 @@
 namespace jdecoster\RoutingExtraBundle\Command;;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
-use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -63,7 +62,7 @@ EOF
         $routeRoleHelper = $this->getContainer()->get('jdecoster.routing_extra.route.role');
         $routes = $this->getContainer()->get('router')->getRouteCollection();
 
-        $table = new Table($output);
+        $table = $this->getHelper('table');
         $table->setHeaders(  array('Name','Method','Scheme','Host','Path', 'Roles'));
         $tableData = array();
 
