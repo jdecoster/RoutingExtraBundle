@@ -80,6 +80,6 @@ EOF
         }
 
         $table->setRows( $tableData );
-        $table->render();
+        $table->render( $output );
     }
 }
