@@ -79,7 +79,6 @@ EOF
             array_push($tableData, $row);
         }
 
-        $table->setStyle('compact');
         $table->setRows( $tableData );
         $table->render();
     }
