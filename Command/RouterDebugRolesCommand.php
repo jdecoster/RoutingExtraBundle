@@ -63,6 +63,7 @@ EOF
         $routes = $this->getContainer()->get('router')->getRouteCollection();
 
         $table = $this->getHelper('table');
+	$table->setLayout(TableHelper::LAYOUT_COMPACT);
         $table->setHeaders(  array('Name','Method','Scheme','Host','Path', 'Roles'));
         $tableData = array();
 
