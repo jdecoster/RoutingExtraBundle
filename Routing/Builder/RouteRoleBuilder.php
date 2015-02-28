@@ -41,5 +41,4 @@ class RouteRoleBuilder
         }
         return array_unique($routeRoles);
     }
-
 }
