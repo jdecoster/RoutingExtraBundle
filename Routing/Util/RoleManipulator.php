@@ -9,7 +9,6 @@ class RoleManipulator
 {
     static $defaultRoles = array("IS_AUTHENTICATED_ANONYMOUSLY");
     private $roleHierarchy;
-    private $controllerNameParser;
 
     public function __construct( $roleHierarchy) {
         $this->roleHierarchy = $roleHierarchy;
