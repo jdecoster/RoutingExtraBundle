@@ -2,7 +2,6 @@
 
 namespace Jdecoster\RoutingExtraBundle\Routing\Util;
 
-use Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser;
 use Symfony\Component\Routing\Route;
 
 
@@ -12,9 +11,8 @@ class RoleManipulator
     private $roleHierarchy;
     private $controllerNameParser;
 
-    public function __construct( $roleHierarchy, ControllerNameParser $controllerNameParser) {
+    public function __construct( $roleHierarchy) {
         $this->roleHierarchy = $roleHierarchy;
-        $this->controllerNameParser = $controllerNameParser;
     }
 
     /**

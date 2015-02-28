@@ -11,7 +11,6 @@
 
         <service id="jdecoster.routing_extra.route.util.manipulator" class="Jdecoster\RoutingExtraBundle\Routing\Util\RoleManipulator">
             <argument>%security.role_hierarchy.roles%</argument>
-            <argument type="service" id="controller_name_converter" />
         </service>
 
         <service id="jdecoster.routing_extra.route.builder" class="Jdecoster\RoutingExtraBundle\Routing\Builder\RouteRoleBuilder">
