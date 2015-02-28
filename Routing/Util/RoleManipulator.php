@@ -1,9 +1,8 @@
 <?php
 
-namespace jdecoster\RoutingExtraBundle\Routing\Util;
+namespace Jdecoster\RoutingExtraBundle\Routing\Util;
 
 use Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser;
-use Symfony\Component\Security\Core\Role\RoleHierarchyInterface;
 use Symfony\Component\Routing\Route;
 
 

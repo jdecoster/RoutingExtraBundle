@@ -1,6 +1,6 @@
 <?php
 
-namespace jdecoster\RoutingExtraBundle\Routing\Builder\Reader;
+namespace Jdecoster\RoutingExtraBundle\Routing\Builder\Reader;
 
 interface ReaderInterface
 {

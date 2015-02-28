@@ -1,6 +1,6 @@
 <?php
 
-namespace jdecoster\RoutingExtraBundle\Routing\Builder\Reader;
+namespace Jdecoster\RoutingExtraBundle\Routing\Builder\Reader;
 
 use jdecoster\RoutingExtraBundle\Routing\Builder\Reader\ReaderInterface;
 use jdecoster\RoutingExtraBundle\Routing\Util\RoleManipulator;

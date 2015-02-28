@@ -1,6 +1,6 @@
 <?php
 
-namespace jdecoster\RoutingExtraBundle\Routing;
+namespace Jdecoster\RoutingExtraBundle\Routing;
 
 use jdecoster\RoutingExtraBundle\Routing\Builder\RouteRoleBuilder;
 use jdecoster\RoutingExtraBundle\Routing\Util\RoleManipulator;
