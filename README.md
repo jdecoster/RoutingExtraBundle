@@ -1,3 +1,5 @@
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/5f13c6c8-2df8-48f1-a85c-a4ccfea49590/mini.png)](https://insight.sensiolabs.com/projects/5f13c6c8-2df8-48f1-a85c-a4ccfea49590)
+
 # RoutingExtraBundle
 
 Provides a `debug:router:role` command which extends `debug:router` with extra information
